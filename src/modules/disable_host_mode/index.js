@@ -14,7 +14,7 @@ class DisableHostModeModule {
 
     load() {
         try {
-            window.App.__container__.lookup('service:globals').set('enableHostMode', !settings.get('disableHostMode'));
+            window.App.__container__.lookup('service:globals').set('isHostMode', !settings.get('disableHostMode'));
         } catch (e) {}
     }
 }
